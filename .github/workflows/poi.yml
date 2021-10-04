@@ -3,7 +3,7 @@ name: POI CICD
 env:
   poi_path: apis/poi/**
   registry: ghcr.io
-  repository: unaihuete-org/OH_DevOps_Oct2021/api-poi
+  repository: unaihuete-org/oh_devops_oct2021/api-poi
   docker_path: apis/poi/web
   staging_url: https://openhackunaipoi-staging.azurewebsites.net
   prod_url: https://openhackunaipoi.azurewebsites.net

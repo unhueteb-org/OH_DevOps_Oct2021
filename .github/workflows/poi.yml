@@ -3,7 +3,7 @@ name: POI CICD
 env:
   poi_path: apis/poi/**
   registry: ghcr.io
-  repository: unaihuete-org/oh_devops_2.0/api-poi
+  repository: unaihuete-org/OH_DevOps_Oct2021/api-poi
   docker_path: apis/poi/web
   staging_url: https://openhackunaipoi-staging.azurewebsites.net
   prod_url: https://openhackunaipoi.azurewebsites.net
@@ -88,7 +88,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    
+  
     - name: Docker login
       run: docker login $registry -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
     - name: Docker build

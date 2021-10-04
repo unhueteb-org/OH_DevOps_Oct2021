@@ -29,12 +29,12 @@ namespace poi.Controllers
         [Produces("application/json", Type = typeof(POI))]
         public IActionResult GetById(string ID)
         {
-            var item = _context.POIs.Find(ID);
-            if (item == null)
-            {
-                return NotFound();
-            }
-            return Ok(item);
+            // var item = _context.POIs.Find(ID);
+            // if (item == null)
+            // {
+            //     return NotFound();
+            // }
+            // return Ok(item);
         }
 
         [HttpGet("trip/{tripID}", Name = "GetPOIsByTripId")]

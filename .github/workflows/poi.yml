@@ -27,6 +27,7 @@ on:
     paths: 
       - apis/poi/**
       - .github/workflows/poi.yml
+  workflow_dispatch:
 jobs:
   build_and_test:
     runs-on: windows-latest

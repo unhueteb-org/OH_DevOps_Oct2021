@@ -35,6 +35,7 @@ namespace poi.Controllers
                 return NotFound();
             }
             return Ok(item);
+            // return NotFound();  //making unit test fail
         }
 
         [HttpGet("trip/{tripID}", Name = "GetPOIsByTripId")]
